@@ -5,7 +5,7 @@ const about =
         data : 
         [
             {
-                title : "Vixcera",
+                title : "Voxlab",
                 text : "provides your technology design.",
                 img : "img/vx.png",
                 color : "var(--yellow)",

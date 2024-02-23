@@ -1,4 +1,4 @@
-const vixcera =
+const voxlab =
 [
     {
         ctg : "Popular on",
@@ -77,4 +77,4 @@ const vixcera =
     }
 ]
 
-export default vixcera
+export default voxlab

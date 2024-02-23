@@ -51,7 +51,7 @@ const AuthTransaction = () => {
                 background: 'var(--primary)',
                 color: 'var(--blue)',
                 confirmButtonColor: "none",
-                text: 'Transaction complete!, thanks for your order on vixcera.',
+                text: 'Transaction complete!, thanks for your order on Voxlab.',
                 customClass: { container: "alertext" },
                 confirmButtonText: 'download product',
             })
@@ -87,7 +87,7 @@ const AuthTransaction = () => {
         <div className='page-max'>
             <div className="back" onClick={() => navigate('/transaction/history')}>
                 <div className="fa-solid fa-arrow-left fa-xl active"></div>
-                <div className="nav-logo" style={{fontFamily: 'var(--caveat)'}}>Vixcera</div>
+                <div className="nav-logo" style={{fontFamily: 'var(--caveat)'}}>Voxlab</div>
           </div>
           <div className='form invoice' style={{justifyContent: 'center',  gap: '30px', textAlign: 'left', marginTop: '70px'}}>
             {(data) && 
@@ -170,7 +170,7 @@ const AuthTransaction = () => {
             </>
             }
             
-            <div className='title' style={{textAlign: 'center'}}> <span>Vixcera</span> Invoice </div>
+            <div className='title' style={{textAlign: 'center'}}> <span>Voxlab</span> Invoice </div>
           </div>
         </div>
     )

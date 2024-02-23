@@ -41,13 +41,13 @@ const Register = () => {
             <div className="back" onClick={() => navigate('/')}>
                 <div className="fa-solid fa-arrow-left fa-xl active"></div>
                 <div className="nav-logo">
-                    <p style={{fontFamily : "var(--caveat)"}}>Vixcera</p>
+                    <p style={{fontFamily : "var(--caveat)"}}>Voxlab</p>
                 </div>
             </div>
             <div className="login-box">
                 <div className="login-top">
                     <div className="title"><span>Regis</span>ter</div>
-                    <p className="desc">Free assets to make your <span>work easier.</span></p>
+                    <p className="desc">Design assets to make your <span>work easier.</span></p>
                 </div>
                 <form onSubmit={createUser} className="login-input">
                     <input type="email" placeholder="email" value={email} onChange={(e) => setEmail(e.target.value)} required/>

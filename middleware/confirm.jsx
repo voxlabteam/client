@@ -19,7 +19,7 @@ const Confirm = {
                     const response = await axios.post(`${import.meta.env.VITE_API}/confirm/user`, {OTP}, 
                     { headers: {'xsrf-token': vxsrf} })
                     localStorage.removeItem('register_mode_user')
-                    swalert("verification success, let's start exploring vixcera.", "success", 5500)
+                    swalert("verification success, let's start exploring voxlab.", "success", 5500)
                     .then((res) => res.dismiss && navigate('/login'))
                 } catch (error) {
                     if (error || error.response) {
@@ -56,7 +56,7 @@ const Confirm = {
             <div className="page">
                 <div className="back" onClick={() => navigate('/')}>
                     <div className="fa-solid fa-arrow-left fa-xl active"></div>
-                    <div className="nav-logo" style={{fontFamily: 'var(--caveat)'}}>Vixcera</div>
+                    <div className="nav-logo" style={{fontFamily: 'var(--caveat)'}}>Voxlab</div>
                 </div>
                 <div className="form" style={{ textAlign: 'center', gap: '50px' }}>
                     <div style={{display: 'flex', gap: '20px', justifyContent: 'center'}}>

@@ -60,7 +60,7 @@ const Profile = () => {
         <div className='page' style={{flexDirection: 'column', gap : '10px'}}>
             <div className="back" onClick={() => navigate('/')}>
                 <div className="fa-solid fa-arrow-left fa-xl active"></div>
-                <div className="nav-logo"><p style={{fontFamily : "var(--caveat)"}}>Vixcera</p></div>
+                <div className="nav-logo"><p style={{fontFamily : "var(--caveat)"}}>Voxlab</p></div>
             </div>
             <LazyLoadImage onClick={() => inputref.current.click()} src={(file) ? URL.createObjectURL(file) : context.img} width={150} height={150} style={{borderRadius : '50%', objectFit: 'cover', cursor : 'pointer', border : '2px solid var(--yellow)'}}/>
             <div className='title'>{context.username}</div>
