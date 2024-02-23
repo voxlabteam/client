@@ -86,7 +86,7 @@ const Content = ({data, setData, setCount}) => {
                 {(voxlab.map((i,k) => {
                 return(
                     <div className="service" style={{paddingTop: "40px"}} key={k}>
-                        <div className="itext"><span>{i.ctg}</span> Voxlab</div>
+                        <h1 className="itext"><span>{i.ctg}</span> Voxlab</h1>
                         {i.data.map((p, l) => 
                             <div className="sbox" key={l} onClick={() => {p.ctg && navigate(`/product/${p.ctg}`)}} style={{borderRight : `2px solid ${p.color}`}}>
                                 <div className="image-container" style={{backgroundColor : `${p.color}`}}>
@@ -108,7 +108,7 @@ const Content = ({data, setData, setCount}) => {
                 {(about.map((i,k) => {
                 return(
                     <div className="service" style={{paddingTop: '20px'}} key={k}>
-                        <div className="itext"><span>{i.ctg}</span> Voxlab</div>
+                        <h1 className="itext"><span>{i.ctg}</span> Voxlab</h1>
                         {i.data.map((p, l) => 
                             <div className="sbox" key={l} style={{borderRight : `2px solid ${p.color}`}}>
                                 <div className="image-container" style={{backgroundColor : `${p.color}`}}>
@@ -146,7 +146,7 @@ const Content = ({data, setData, setCount}) => {
                 {(products.map((i,k) => {
                     return(
                         <div className="service" style={{paddingTop: "40px"}} key={k}>
-                            <div className="itext"><span>{i.ctg && i.ctg}</span> Categories</div>
+                            <h1 className="itext"><span>{i.ctg && i.ctg}</span> Categories</h1>
                             {i.data.map((p, l) => 
                                 <div className="sbox" key={l} onClick={() => navigate(`/product/${p.ctg}`)}  style={{borderRight : `2px solid ${p.color}`}}>
                                     <div className="image-container" style={{backgroundColor : `${p.color}`}}>
