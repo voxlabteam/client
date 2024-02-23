@@ -1,4 +1,4 @@
-const voxlab =
+const stresslo =
 [
     {
         ctg : "Popular on",
@@ -77,4 +77,4 @@ const voxlab =
     }
 ]
 
-export default voxlab
+export default stresslo

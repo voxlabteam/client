@@ -5,7 +5,7 @@ const about =
         data : 
         [
             {
-                title : "Voxlab",
+                title : "stresslo",
                 text : "provides your technology design.",
                 img : "img/sl.png",
                 color : "var(--yellow)",

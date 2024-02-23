@@ -41,7 +41,7 @@ const Register = () => {
             <div className="back" onClick={() => navigate('/')}>
                 <div className="fa-solid fa-arrow-left fa-xl active"></div>
                 <div className="nav-logo">
-                    <p style={{fontFamily : "var(--caveat)"}}>Voxlab</p>
+                    <p style={{fontFamily : "var(--caveat)"}}>stresslo</p>
                 </div>
             </div>
             <div className="login-box">

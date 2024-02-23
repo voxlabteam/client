@@ -4,7 +4,7 @@ import { useContext } from "react"
 import products from "../../data/product"
 import swalert from "../../utils/swalert"
 import Context from "../../utils/context"
-import voxlab from "../../data/voxlab"
+import stresslo from "../../data/voxlab"
 import about from "../../data/about"
 import axios from "axios"
 import "../style/content.css"
@@ -78,15 +78,15 @@ const Content = ({data, setData, setCount}) => {
                 <div className="developer">
                     <img src="/img/greeti.png" className="dimasputra" alt="" />
                     <div className="text-wrapper">
-                    <h1>Welcome to Voxlab</h1>
+                    <h1>Welcome to stresslo</h1>
                     <div>Let's explore with us.</div>
                     <div className="button contact" onClick={() => navigate('/register')}>Sign up</div>
                     </div>
                 </div>}
-                {(voxlab.map((i,k) => {
+                {(stresslo.map((i,k) => {
                 return(
                     <div className="service" style={{paddingTop: "40px"}} key={k}>
-                        <h1 className="itext"><span>{i.ctg}</span> Voxlab</h1>
+                        <h1 className="itext"><span>{i.ctg}</span> stresslo</h1>
                         {i.data.map((p, l) => 
                             <div className="sbox" key={l} onClick={() => {p.ctg && navigate(`/product/${p.ctg}`)}} style={{borderRight : `2px solid ${p.color}`}}>
                                 <div className="image-container" style={{backgroundColor : `${p.color}`}}>
@@ -108,7 +108,7 @@ const Content = ({data, setData, setCount}) => {
                 {(about.map((i,k) => {
                 return(
                     <div className="service" style={{paddingTop: '20px'}} key={k}>
-                        <h1 className="itext"><span>{i.ctg}</span> Voxlab</h1>
+                        <h1 className="itext"><span>{i.ctg}</span> stresslo</h1>
                         {i.data.map((p, l) => 
                             <div className="sbox" key={l} style={{borderRight : `2px solid ${p.color}`}}>
                                 <div className="image-container" style={{backgroundColor : `${p.color}`}}>
@@ -164,7 +164,7 @@ const Content = ({data, setData, setCount}) => {
                 }))}
             </div>
             }
-            <p style={{textAlign: 'center', color: 'var(--text)', fontSize: '0.8rem', marginTop: '20px', fontFamily: 'var(--quicksand)'}}>Copyright © 2024 Voxlab, VX platform.</p>
+            <p style={{textAlign: 'center', color: 'var(--text)', fontSize: '0.8rem', marginTop: '20px', fontFamily: 'var(--quicksand)'}}>Copyright © 2024 stresslo, SL platform.</p>
         </div>
     )
 }

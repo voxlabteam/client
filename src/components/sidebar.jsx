@@ -17,7 +17,7 @@ const Sidebar = () => {
         <div className="sidebar" onClick={() => hideSidebar()}>
             <div className="nav-logo">
                 <img src="/img/stresslo.png"/>
-                <p>Voxlab</p>
+                <h1>stresslo</h1>
             </div>
             <div className="sideitem">
                 <div className="topside">

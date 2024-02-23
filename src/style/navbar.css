@@ -36,7 +36,7 @@
 .nav-logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 6px;
     font-size: 0.55rem;
     font-family: var(--quicksand);
     color: var(--yellow);

@@ -54,7 +54,7 @@ const Details = () => {
         <div className='page-max'>
             <div className="back" onClick={() => navigate(`/product/${i.ctg}`)}>
                 <div className="fa-solid fa-arrow-left fa-xl active"></div>
-                <div className="nav-logo" style={{fontFamily: 'var(--caveat)'}}>Voxlab</div>
+                <div className="nav-logo" style={{fontFamily: 'var(--caveat)'}}>stresslo</div>
             </div>
             <div className="form">
                 <div className='prev-form' style={{ marginTop: '10px', paddingBottom: '0', gap: '20px' }}>
