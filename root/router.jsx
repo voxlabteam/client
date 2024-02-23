@@ -13,8 +13,6 @@ import Details from "../src/pages/product/details"
 import Product from "../src/pages/product/product"
 import Register from "../src/pages/user/register"
 import Confirm from "../middleware/confirm"
-import Wetails from "../admin/wetails"
-import Dashboard from "../admin/dashboard"
 import checkvxsrf from "../service/checkvxsrf"
 import History from "../src/pages/user/history"
 import AuthTransaction from "../middleware/authTransaction"
@@ -73,14 +71,12 @@ const Routing = () => {
           <Route path="/create" element={<Create/>}/>
           <Route path="/Profile" element={<Profile/>}/>
           <Route path="/register" element={<Register/>}/>
-          <Route path="/dashboard" element={<Dashboard/>}/>
           <Route path="/product/:ctg" element={<Product/>}/>
           <Route path="/order/:vid" element={<Order/>}/>
           <Route path="/products" element={<Main/>}/>
           <Route path="/about" element={<Main/>}/>
           
           <Route path="/product/details/:vid" element={<Details/>}/>
-          <Route path="/waiting/details/:vid" element={<Wetails/>}/>
 
           <Route path="/confirm/user" element={<Confirm.user/>}/>
           {/* <Route path="/confirm/contributor" element={<AuthRegisterCont/>}/> */}
