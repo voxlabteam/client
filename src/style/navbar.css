@@ -1,0 +1,141 @@
+.navbar {
+    width: 90%;
+    height: 55px;
+    margin: 0 auto;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-color: var(--primary);
+    box-shadow: 7px 7px 20px var(--second);
+}
+
+.navbar-container {
+    width: 100%;
+    height: max-content;
+    padding-top: 20px;
+    box-sizing: border-box;
+    z-index: 2;
+    transition: 0.5s linear;
+}
+.navbar-container.fix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 30px;
+    animation: nav 0.5s ease-in-out;
+    background-color: var(--background);
+}
+@keyframes nav {
+    from{opacity: 0;}
+    to {opacity: 1;}
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    color: var(--yellow);
+    cursor: pointer;
+}
+.nav-logo img {
+    width: 33px;
+}
+
+
+.nav-menu {
+    display: flex;
+    gap: 4rem;
+}
+.menu {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 1.15rem;
+}
+.active {
+    color: var(--yellow);
+}
+
+.nav-user {
+    display: flex;
+    align-items: center;
+}
+
+.nav-user-mobile {
+    display: none;
+}
+
+
+@media (max-width : 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-user {
+        display: none;
+    }
+
+    .nav-user-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .count {
+        background-color: var(--yellow);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -13px;
+        right: -3px;
+        width: 17px;
+        height: 17px;
+        font-weight: bolder;
+        font-size: 0.77rem;
+        border-radius: 50%;
+        box-shadow: 3px 3px 7px var(--second);
+        cursor: pointer;
+    }
+}
+
+@media (max-width:600px) {
+    .navbar {
+        width: 95%;
+    }
+}
+
+@media (max-width : 420px) {
+    .navbar {
+        width: 100%;
+        padding: 20px;
+        height: 60px;
+    }
+
+    .nav-logo img {
+        width: 31px;
+    }
+
+    .navbar-container {
+        padding: 0 5px;
+        padding-top: 20px;
+    }
+
+    .nav-logo div {
+        display: none;
+    }
+    
+    .nav-user {
+        display: none;
+    }
+
+    .nav-user-mobile {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+}

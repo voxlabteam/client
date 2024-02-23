@@ -1,0 +1,10 @@
+.main {
+    width: 100%;
+    padding: 15px 10px;
+    overflow: hidden scroll;
+    box-sizing: border-box;
+    background-color: var(--background);
+    position: relative;
+}::-webkit-scrollbar {
+    display: none;
+}
