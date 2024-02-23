@@ -7,7 +7,7 @@ const about =
             {
                 title : "Voxlab",
                 text : "provides your technology design.",
-                img : "img/vx.png",
+                img : "img/sl.png",
                 color : "var(--yellow)",
                 pricing : ['Tech', 'Design']
             },
