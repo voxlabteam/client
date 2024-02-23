@@ -52,7 +52,7 @@ const Navbar = ({ count }) => {
           {context.loading ? <ScaleLoader height={25} color="#EBE76C"/> : 
           <>
             <img src="/img/vixcera.png"/>
-            <div>VI | X</div>
+            <div>VO | X</div>
           </>
           }
         </div>
